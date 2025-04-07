@@ -1,0 +1,1 @@
+This project benchmarks various implementations of the Ackermann function to compare performance between synchronous, Task-based, ValueTask-based, and a custom IValueTaskSource solution. The goal is to analyze overhead and efficiency in different async approaches.
