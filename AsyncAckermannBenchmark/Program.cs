@@ -12,11 +12,10 @@ BenchmarkRunner.Run<Ackermann>();
 public class Ackermann
 {
     // AckermannFunc(3,3) = 61, total recursive calls = 2432
+    [Params(1, 2, 3)]        // Parameter for testing different values of m
+    public int m;    
     [Params(1, 2, 3)]        // Parameter for testing different values of n
     public int n;
-
-    [Params(1, 2, 3)]        // Parameter for testing different values of m
-    public int m;
 
     // Baseline synchronous implementation of Ackermann function
     [Benchmark(Baseline = true)]
